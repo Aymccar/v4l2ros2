@@ -25,7 +25,7 @@ class VideoWriter(Node):
         # Subscribe directly to the image topic
         self.subscription = self.create_subscription(
             Image,
-            '/bluerov/sensors/CamL/image_color',
+            '/raytracer/image',
             self.callback,
             10
         )
